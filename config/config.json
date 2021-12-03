@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "video-record-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/videoRecord/VideoRecordWebPart.js",
+          "manifest": "./src/webparts/videoRecord/VideoRecordWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "VideoRecordWebPartStrings": "lib/webparts/videoRecord/loc/{locale}.js"
+  }
+}
