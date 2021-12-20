@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
-
+import styles from './VideoRecord.module.scss';
 export const VideoPreview = ({ stream }: { stream: MediaStream | null }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -12,5 +12,5 @@ export const VideoPreview = ({ stream }: { stream: MediaStream | null }) => {
     if (!stream) {
         return null;
     }
-    return <video ref={videoRef} width={500} height={500} autoPlay controls />;
+    return <video ref={videoRef} width={500} height={500} autoPlay controls  className={styles.videoCanvas}/>;
 };
